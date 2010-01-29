@@ -44,7 +44,7 @@ int main() {
 		rc = pthread_join(threads[i], &status);
 		if(rc)
 		{
-			cout << "EORROR: return code from pthread_join is %d" << rc << endl;
+			cout << "EORROR: return code from pthread_join is " << rc << endl;
 			exit(-1);
 		}
 		cout << "Main: compeleted join with thread" << i << "having a status of" << (long int)status << endl;
